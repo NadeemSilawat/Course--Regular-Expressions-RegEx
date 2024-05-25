@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regular Expression</title>
     <link rel="stylesheet" href="./assets/style.css">
 </head>
+
 <body>
     <h1>New User Signup</h1>
     <form action="">
         <div class="field">
-            <input type="text" placeholder="username"><br>
-            <label for="">Username must be a and contain 5-12 characters</label>
+            <input type="text" name="username" placeholder="username"><br>
+            <p>Username must be a and contain 5-12 characters</p>
         </div>
 
         <div class="field">
-            <input type="email" placeholder="email"><br>
-            <label for="">email must be a valid address, e.g. me@mydomain.com</label>
+            <input type="email" name="email" placeholder="email"><br>
+            <p>email must be a valid address, e.g. me@mydomain.com</p>
         </div>
 
         <div class="field">
-            <input type="password" placeholder="password"><br>
-            <label for="">password must alphanumeric (@,_and-are also allowed)and be 8-20 characters</label>
+            <input type="password" name="password" placeholder="password"><br>
+            <p>password must alphanumeric (@,_and-are also allowed)and be 8-20 characters</p>
         </div>
 
         <div class="field">
-            <input type="number" placeholder="telephone"><br>
-            <label for="">Telephone must be a valid UK telephone number(11 digits)</label>
+            <input type="number" name="telephone " placeholder="telephone"><br>
+            <p>Telephone must be a valid UK telephone number(11 digits)</p>
         </div>
 
         <div class="field">
-            <input type="text" placeholder="profile slug"><br>
-            <label for="">Slug must contain only lowercase letters,numbers and hyphens and bie 8-20 characters</label>
+            <input type="text" name="slug" placeholder="profile slug"><br>
+            <p>Slug must contain only lowercase letters,numbers and hyphens and bie 8-20 characters</p>
         </div>
     </form>
+    <script src="assets/validation.js"></script>
 </body>
+
 </html>
