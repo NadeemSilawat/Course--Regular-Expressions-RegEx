@@ -1,6 +1,7 @@
 /* []      //single character
 [abc123]000  // All Match   //a000 b000 c000 1000
 [^a]000  // not matched a000  //    b000 c000 1000
+(?<![a-zA-Z])000    ------ 000 a000 000 a000 000a //Negetive Lookbehind
 [0-1]*  //secuence match
 [0-9]{11}  //match only 11 numbers
 [a-z]{4,8} // match 4 to 8 word length match
@@ -34,3 +35,26 @@ abc\*  // match // abc* // skip special character on regEx
 
 
 */
+
+
+/* Definitions
+Look ahead positive (?=)
+Find expression A where expression B follows:
+
+ex:-A(?=B)
+
+Look ahead negative (?!)
+Find expression A where expression B does not follow:
+
+ex:-A(?!B)
+
+Look behind positive (?<=)
+Find expression A where expression B precedes:
+
+ex:-(?<=B)A
+
+Look behind negative (?<!)
+Find expression A where expression B does not precede:
+
+ex:-(?<!B)A
+ */
